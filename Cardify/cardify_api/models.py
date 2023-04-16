@@ -16,7 +16,7 @@ class Deck(models.Model):
     comments = models.CharField()
 
 class Card(models.Model):
-    # deck = models.ForeignKey(Deck, on_delete = models.CASCADE)
+    deck = models.ForeignKey(Deck, related_name='owner', null = True, on_delete = models.CASCADE)
     question = models.CharField()
     answer = models.CharField()
     image = models.CharField()

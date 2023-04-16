@@ -8,7 +8,6 @@ SUBJECT_CHOICES = [
     ('english', 'English'),
 ]
 
-
 class Deck(models.Model):
     title = models.CharField()
     subject = models.CharField(choices=SUBJECT_CHOICES, default='math')

@@ -2,10 +2,10 @@ from django.db import models
 
 # Create your models here.
 SUBJECT_CHOICES = [
-    ('math', 'Math'),
-    ('science', 'Science'),
-    ('social', 'Social Studies'),
-    ('english', 'English'),
+    ('Math', 'math'),
+    ('Science', 'science'),
+    ('Social Studies', 'social'),
+    ('English', 'english'),
 ]
 
 class Deck(models.Model):
